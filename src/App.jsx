@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './App.css';
+import 'Animate.css';
 
 export default function App() {
     const [weather, setWeather] = useState(null);
@@ -34,9 +35,10 @@ export default function App() {
     return (
         <div className="Okay">
         <div className="weather">
+            <h1 className="animate__animated animate__rotateIn">Weather report</h1>
             <form onSubmit={getWeather}>
                 <input type="text" name="userInput" placeholder="Enter city" />
-                <button type="submit">Search</button>
+                <button type="submit" className="search">Search</button>
             </form>
             <div className="dad">
             {error && <h3>{error}</h3>}
@@ -52,6 +54,12 @@ export default function App() {
                 </>
             )}
             </div>
+        </div>
+        <div className="hari">
+        <input type="radio" name="gender" id="male" value='male'/>
+        <label htmlFor="male">Male</label>
+        <input type="radio" name="gender" id='female' value='female'/>
+        <label htmlFor="female">female</label>
         </div>
         </div>
     );
