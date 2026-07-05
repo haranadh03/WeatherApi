@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './App.css';
-import 'Animate.css';
+import 'animate.css';
 
 export default function App() {
     const [weather, setWeather] = useState(null);
