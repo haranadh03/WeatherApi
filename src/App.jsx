@@ -55,12 +55,6 @@ export default function App() {
             )}
             </div>
         </div>
-        <div className="hari">
-        <input type="radio" name="gender" id="male" value='male'/>
-        <label htmlFor="male">Male</label>
-        <input type="radio" name="gender" id='female' value='female'/>
-        <label htmlFor="female">female</label>
-        </div>
         </div>
     );
 }
